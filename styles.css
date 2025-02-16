@@ -52,6 +52,16 @@ body {
     color: white;
     border-radius: 5px;
 }
+.button-container2 donotclick {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 10px;
+}
 .button-container button:hover {
     background-color: #0056b3;
 }
