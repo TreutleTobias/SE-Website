@@ -6,7 +6,10 @@ body {
     align-items: center;
     height: 100vh;
     background: url('IMG_0095.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; /* Skaliert das Bild so, dass es den gesamten Bildschirm abdeckt */
+    background-position: center;
+    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
+   
 }
 .container {
     display: grid;
