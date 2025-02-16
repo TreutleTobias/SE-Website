@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotating Flowers</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f8ff;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .flower {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      animation: rotateFlower 8s linear infinite;
+    }
+    @keyframes rotateFlower {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function createFlower() {
+      const flower = document.createElement('img');
+      flower.className = 'flower';
+      flower.src = `https://source.unsplash.com/120x120/?flower,${Math.random()}`;
+      flower.style.top = `${Math.random() * 80 + 10}vh`;
+      flower.style.left = `${Math.random() * 80 + 10}vw`;
+      document.body.appendChild(flower);
+    }
+    
+    function generateFlowers() {
+      for (let i = 0; i < 7; i++) {
+        createFlower();
+      }
+    }
+    
+    generateFlowers();
+  </script>
+</body>
+</html>
