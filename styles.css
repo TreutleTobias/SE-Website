@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('fzhW.gif') no-repeat center center fixed;
+    background: url('Hintergrund_GIF.gif') no-repeat center center fixed;
     background-size: cover; /* Skaliert das Bild so, dass es den gesamten Bildschirm abdeckt */
     background-position: center;
     background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fixiert */
