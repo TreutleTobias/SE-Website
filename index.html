@@ -13,6 +13,12 @@
         <a href="https://puginarug.com/" class="grid-item"><img src="IMG_0850.JPG" alt="Image 3"></a>
         <a href="https://onesquareminesweeper.com/" class="grid-item"><img src="IMG_4153.jpg" alt="Image 4"></a>
     </div>
+    
+    <div class="button-container">
+        <button onclick="window.location.href='subpage1.html'">Sub Page 1</button>
+        <button onclick="window.location.href='subpage2.html'">Sub Page 2</button>
+        <button onclick="window.location.href='subpage3.html'">Sub Page 3</button>
+    </div>
 </body>
 </html>
 
@@ -20,6 +26,7 @@
     body {
         margin: 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -52,6 +59,9 @@
     }
     .button-container {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
     .button-container button {
         margin: 5px;
