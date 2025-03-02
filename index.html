@@ -6,14 +6,30 @@
     <title>Git Practice Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 20px;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+        }
         .button-container2 {
-            margin-top: 50px; /* Adjust this value to move the button further down */
+            margin-top: 50px; 
             display: flex;
             justify-content: center;
             gap: 20px;
         }
         .footer {
-            margin-top: 80px; /* Space between the button and the footer */
+            margin-top: 80px;
             text-align: center;
             font-size: 18px;
             font-weight: bold;
@@ -39,7 +55,7 @@
             cursor: pointer;
         }
         .button-container3 {
-            margin-top: 20px; /* Space between buttons */
+            margin-top: 20px;
             text-align: center;
         }
         .button-container3 button {
